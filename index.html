@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Hacker Dashboard</title>
+    <meta name="description" content="A responsive bento grid design for a cyberpunk dashboard">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bento-container">
+        <!-- Card 1: Main Status -->
+        <div class="bento-card span-2-col span-2-row main-status">
+            <h1>SYSTEM NOMINAL</h1>
+            <p>Uptime: 99.99%</p>
+            <p class="logs">> Initializing protocols...</p>
+            <p class="logs">> Connection established.</p>
+            <div class="glow-orb"></div>
+        </div>
+        
+        <!-- Card 2: Network Traffic -->
+        <div class="bento-card span-2-col">
+            <h2>Net Traffic</h2>
+            <div class="chart-placeholder">
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 80%"></div>
+                <div class="bar" style="height: 60%"></div>
+                <div class="bar" style="height: 90%"></div>
+                <div class="bar" style="height: 30%"></div>
+                <div class="bar" style="height: 70%"></div>
+                <div class="bar" style="height: 50%"></div>
+            </div>
+        </div>
+        
+        <!-- Card 3: Threat Level -->
+        <div class="bento-card danger">
+            <h2>Threat</h2>
+            <span class="threat-level">LOW</span>
+        </div>
+        
+        <!-- Card 4: Proxy Nodes -->
+        <div class="bento-card">
+            <h2>Proxies</h2>
+            <ul class="proxy-list">
+                <li>Alpha - <span class="status-ok">OK</span></li>
+                <li>Beta - <span class="status-ok">OK</span></li>
+                <li>Gamma - <span class="status-down">DOWN</span></li>
+            </ul>
+        </div>
+        
+        <!-- Card 5: CPU Load -->
+        <div class="bento-card span-3-col">
+            <h2>CPU Load</h2>
+            <div class="cpu-stats">
+                <div class="core-stat">
+                    <span>Core 0</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+                </div>
+                <div class="core-stat">
+                    <span>Core 1</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 82%;"></div></div>
+                </div>
+                <div class="core-stat">
+                    <span>Core 2</span>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 12%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: Encryption Status -->
+        <div class="bento-card">
+            <h2>Encryption</h2>
+            <div class="encryption-status">
+                <span class="lock-icon">🔒</span>
+                <p>RSA-4096 Active</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
